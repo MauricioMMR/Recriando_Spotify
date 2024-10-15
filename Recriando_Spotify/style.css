@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: white;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sideber {
+    width: 300px;
+    background-color: #121212;
+    padding: 24px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.nav-logo i {
+    font-size: 24px;
+}
+
+.nav-b {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-b i,
+.nav-b p {
+    color: #b7b3b6;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.nav-playlist,
+.nav-podcast {
+    background-color: #242424;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.nav-playlist button,
+.nav-podcast button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 6px 10px;
+    margin-top: 16px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+.nav-playlist p,
+.nav-podcast p {
+    font-size: 12px;
+}
+
+.nav-footer {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-footer a {
+    color: #a7a7a7;
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 12px;
+    margin-bottom: 8px;
+}
+
+.nav-lang {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+main {
+    padding: 24px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.barra-pesquisa {
+    display: flex;
+    align-items: center;
+    background-color: #242424;
+    padding: 8px 16px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.barra-pesquisa input {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    width: 100%;
+    margin-left: 10px;
+    outline: none;
+}
+
+.artistas-grid,
+.albuns-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.artist-card,
+.albums-card {
+    background-color: #181818;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.artist-card:hover,
+.albums-card:hover {
+    background-color: #282828;
+
+}
+
+.artist-card img,
+.albums-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    max-height: 70%;
+}
+
+.artist-card h3,
+.albums-card h3 {
+    font-size: 12px;
+}
+
+.artist-card p,
+.albums-card p {
+    font-size: 10px;
+    color: #b7b3b6;
+}
+
+.content {
+    margin-top: 40px;
+}
+
+.content h2 {
+    margin-bottom: 10px;
+}
+
+.banner {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, #af2896, #509bf5);
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 14px;
+    border-radius: 5px;
+}
+
+.banner h2 {
+    font-size: 12px;
+}
+
+.banner p {
+    font-size: 10px;
+}
+
+.banner button {
+    border-radius: 20px;
+    color: #000;
+    border: none;
+    padding: 12px 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
